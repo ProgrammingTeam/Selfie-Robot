@@ -21,7 +21,8 @@ public class RobotContainer {
         private final PIDSub m_PID = new PIDSub();
         // Create instance of each Controller/Joystick:
         private final Joystick driverJoytick = new Joystick(OIConstants.kDriverControllerPort);
-        private final CommandXboxController m_driverController = new CommandXboxController(0);
+        private final CommandXboxController m_driverController = new CommandXboxController(
+                        OIConstants.kDriverControllerPort);
 
         public RobotContainer() {
 

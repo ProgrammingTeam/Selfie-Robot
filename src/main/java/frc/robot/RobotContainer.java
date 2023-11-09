@@ -49,7 +49,7 @@ public class RobotContainer {
                 // m_driverController.a().onFalse(new setPositionA(m_PID, 0));
                 new JoystickButton(driverJoytick, 1).onTrue(new WritePicture());
 
-                m_driverController.a().whileTrue(m_PlayAudio.PressA());
+                m_driverController.rightBumper().whileTrue(m_PlayAudio.PressA());
         }
 
         // Run AutonomousCommand:

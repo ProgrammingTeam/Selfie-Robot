@@ -30,7 +30,7 @@ public class PlayAudio extends SubsystemBase {
   public PlayAudio() {
     // create AudioInputStream object
     try {
-      filePath = "C:/Users/oclon/OneDrive/Documents/GitHubCode/Selfie-Robot/src/main/java/frc/robot/WarioDead.mp3";
+      filePath = "C:/Users/oclon/OneDrive/Documents/GitHubCode/Selfie-Robot/src/main/java/frc/robot/SnapSound.wav";
 
       audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
       // create clip reference

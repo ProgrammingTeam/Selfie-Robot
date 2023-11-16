@@ -14,6 +14,7 @@ import org.opencv.core.CvException;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
 
+import frc.robot.subsystems.PlayAudio;
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
@@ -49,7 +50,7 @@ public class WritePicture extends InstantCommand {
 
       Sink.grabFrame(matrix, 1.0);
       Imgcodecs.imwrite(full_path, matrix);
-    
+      new PlayAudio();
       System.out.println("Successfully wrote to the file.");
   
      } catch (OutOfMemoryError | CvException e) {
